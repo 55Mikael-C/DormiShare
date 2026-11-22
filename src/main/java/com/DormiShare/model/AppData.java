@@ -1,4 +1,4 @@
-package main.java.com.DormiShare.model;
+package com.DormiShare.model;
 
 public class AppData {
     

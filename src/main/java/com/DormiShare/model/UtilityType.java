@@ -1,3 +1,3 @@
-package main.java.com.DormiShare.model;
+package com.DormiShare.model;
 
 public enum UtilityType { ELECTRIC, WATER }

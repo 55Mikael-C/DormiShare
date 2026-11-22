@@ -1,4 +1,4 @@
-package main.java.com.DormiShare.ui;
+package com.DormiShare.ui;
 
 public class UiKit {
     

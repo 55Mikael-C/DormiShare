@@ -1,4 +1,4 @@
-package main.java.com.DormiShare.util;
+package com.DormiShare.util;
 
 public class LocalDateAdapter {
     

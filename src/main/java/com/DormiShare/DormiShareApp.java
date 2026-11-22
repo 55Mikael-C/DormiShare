@@ -1,4 +1,4 @@
-package main.java.com.DormiShare;
+package com.DormiShare;
 
 public class DormiShareApp {
     

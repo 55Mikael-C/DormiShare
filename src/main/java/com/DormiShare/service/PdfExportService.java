@@ -1,4 +1,4 @@
-package main.java.com.DormiShare.service;
+package com.DormiShare.service;
 
 public class PdfExportService {
     
