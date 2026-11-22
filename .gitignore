@@ -1,0 +1,11 @@
+# Compiled Java files
+*.class
+
+# Maven build output folder
+target/
+
+# IDE and OS files (optional but recommended)
+.vscode/
+.idea/
+*.iml
+.DS_Store
