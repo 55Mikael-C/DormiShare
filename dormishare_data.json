@@ -1,0 +1,140 @@
+{
+  "locations": [
+    {
+      "id": "a9db4d05-47a3-469d-8604-69f32d2c6481",
+      "name": "Bahay ni Kuya",
+      "hasElectricSubMeter": true,
+      "hasWaterSubMeter": false,
+      "rooms": [
+        {
+          "id": "c9ab91da-c56f-458c-80f7-e3300eada91e",
+          "name": "Pearl",
+          "capacity": 4,
+          "monthlyRent": 2500.0,
+          "lastElectricReading": 1200.0,
+          "lastWaterReading": 0.0,
+          "tenants": [
+            {
+              "id": "2e4c6c06-3c51-4991-9c17-e65797eaeba7",
+              "fullName": "Juan Dela Cruz",
+              "moveInDate": "2026-05-28",
+              "awayPeriods": [],
+              "rentStatus": "PENDING",
+              "utilityStatus": "PENDING"
+            },
+            {
+              "id": "c6b49f34-1885-4179-b4af-465559fcd7a6",
+              "fullName": "Maria Santos",
+              "moveInDate": "2026-07-28",
+              "awayPeriods": [
+                {
+                  "start": "2026-11-10",
+                  "end": "2026-11-16"
+                }
+              ],
+              "rentStatus": "PAID",
+              "utilityStatus": "PENDING"
+            },
+            {
+              "id": "3056b3ff-7ca3-4aa7-8c1e-7c4a1f4b822a",
+              "fullName": "Pedro Reyes",
+              "moveInDate": "2026-11-11",
+              "awayPeriods": [],
+              "rentStatus": "PENDING",
+              "utilityStatus": "PENDING"
+            }
+          ]
+        },
+        {
+          "id": "9d22e1b6-934b-43a0-8a5a-3e0d79208c4f",
+          "name": "Garnet",
+          "capacity": 3,
+          "monthlyRent": 3000.0,
+          "lastElectricReading": 800.0,
+          "lastWaterReading": 0.0,
+          "tenants": [
+            {
+              "id": "118317e4-14ac-4a08-a163-9d77488f5972",
+              "fullName": "Ana Villanueva",
+              "moveInDate": "2026-03-28",
+              "awayPeriods": [],
+              "rentStatus": "PAID",
+              "utilityStatus": "PAID"
+            },
+            {
+              "id": "0e88a2a8-af9e-4f63-aedf-f69a0a68b3de",
+              "fullName": "Liza Bautista",
+              "moveInDate": "2026-09-28",
+              "awayPeriods": [],
+              "rentStatus": "PENDING",
+              "utilityStatus": "PENDING"
+            }
+          ]
+        }
+      ],
+      "billHistory": []
+    },
+    {
+      "id": "53d18ff5-c98e-463b-b3fa-ea587ccb8bcf",
+      "name": "Compound",
+      "hasElectricSubMeter": false,
+      "hasWaterSubMeter": false,
+      "rooms": [
+        {
+          "id": "b9d817f6-3664-4b8b-bb5e-0c0410fa184e",
+          "name": "Unit A",
+          "capacity": 2,
+          "monthlyRent": 3500.0,
+          "lastElectricReading": 0.0,
+          "lastWaterReading": 0.0,
+          "tenants": [
+            {
+              "id": "ffdaed74-273a-4372-a060-98d9f800e70e",
+              "fullName": "Carlo Mendoza",
+              "moveInDate": "2026-06-28",
+              "awayPeriods": [],
+              "rentStatus": "PENDING",
+              "utilityStatus": "PENDING"
+            },
+            {
+              "id": "b163b5ff-9570-430c-9f6a-8387c3054b4c",
+              "fullName": "Jomar Aquino",
+              "moveInDate": "2026-08-28",
+              "awayPeriods": [],
+              "rentStatus": "PENDING",
+              "utilityStatus": "PENDING"
+            }
+          ]
+        },
+        {
+          "id": "cf543f05-7ea7-48e7-8f9a-0fa5939238a6",
+          "name": "Unit B",
+          "capacity": 4,
+          "monthlyRent": 2000.0,
+          "lastElectricReading": 0.0,
+          "lastWaterReading": 0.0,
+          "tenants": [
+            {
+              "id": "d9250a5a-b221-4bf9-a0ce-db5af2110e10",
+              "fullName": "Rico Garcia",
+              "moveInDate": "2025-11-28",
+              "awayPeriods": [],
+              "rentStatus": "PAID",
+              "utilityStatus": "PENDING"
+            },
+            {
+              "id": "8e446efb-9603-4d1f-bf08-28235b1dc599",
+              "fullName": "Nina Cruz",
+              "moveInDate": "2026-04-28",
+              "moveOutDate": "2026-11-20",
+              "awayPeriods": [],
+              "rentStatus": "PENDING",
+              "utilityStatus": "PENDING"
+            }
+          ]
+        }
+      ],
+      "billHistory": []
+    }
+  ]
+}
