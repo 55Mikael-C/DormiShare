@@ -99,6 +99,7 @@ public class MainView {
         sidebar.getStyleClass().add("sidebar-box");
         sidebar.setPrefWidth(270);
         sidebar.setMinWidth(270);
+        sidebar.setMaxHeight(Double.MAX_VALUE);
         rebuildSidebar();
         return sidebar;
     }
@@ -112,6 +113,16 @@ public class MainView {
         for (Location l : data.getLocations())
             sidebar.getChildren().add(navItem(l.getId(), l.getName(), null, () -> showRooms(l)));
         sidebar.getChildren().add(navItem("bills", "Utilities & Bills", UiKit.ICON_BOLT, this::showBills));
+        Region spacer = new Region();
+        VBox.setVgrow(spacer, Priority.ALWAYS);
+        sidebar.getChildren().add(spacer);
+
+        Node exitItem = navItem("exit", "Exit", UiKit.ICON_EXIT, () -> {
+            storage.save();
+            javafx.application.Platform.exit();
+        });
+        exitItem.getStyleClass().add("nav-exit");
+        sidebar.getChildren().add(exitItem);
         updateSidebar();
     }
 
@@ -362,9 +373,11 @@ public class MainView {
         TableColumn<Tenant, Void> pdfCol = new TableColumn<>("Statement");
         pdfCol.setPrefWidth(130);
         pdfCol.setCellFactory(c -> new TableCell<Tenant, Void>() {
-            private final Button btn = UiKit.secondary("Download PDF");
+            private final Button btn = UiKit.secondary("");
             {
-                btn.getStyleClass().add("btn-small");
+                btn.setGraphic(UiKit.icon(UiKit.ICON_DOWNLOAD, 18));
+                btn.getStyleClass().addAll("icon-btn", "btn-small");
+                btn.setTooltip(new Tooltip("Download PDF Statement"));
                 btn.setOnAction(e -> exportPdf(getTableView().getItems().get(getIndex())));
             }
             @Override
